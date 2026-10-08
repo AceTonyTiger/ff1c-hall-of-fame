@@ -57,3 +57,5 @@
 @media(max-width:900px){.hero-feature-logo{width:min(370px,43vw)}}
 @media(max-width:650px){.hero-feature-logo{width:min(320px,72vw);opacity:.92}.hero-art{right:-28px;top:37%;width:280px;height:300px;opacity:.48}.hero-art .orbit-one{width:250px;height:300px}.hero-art .orbit-two{width:200px;height:250px}}
 @media(prefers-reduced-motion:reduce){.hero-feature-logo{animation:none}}
+.season-records-banner a{display:inline-flex;align-items:center;gap:10px;text-decoration:none}.season-records-banner a img{width:34px;height:34px;object-fit:contain;border-radius:50%;border:1px solid #ffffff44}.season-records-banner a span{text-transform:none;letter-spacing:0;font-size:11px;font-weight:700;color:var(--gold-bright)}
+@media(max-width:520px){.season-records-banner a{gap:8px}.season-records-banner a img{width:30px;height:30px}.season-records-banner a span{font-size:10px}}
