@@ -1,0 +1,29 @@
+[
+  {
+    "season": 1,
+    "tier": 2,
+    "driversChampion": "Carrot96",
+    "constructorsChampion": "McLaren",
+    "constructorDrivers": ["Carrot96", "The Reaper"],
+    "teamLogo": "assets/teams/mclaren.png",
+    "seasonDescription": "The inaugural recorded season set the standard for Friday night racing."
+  },
+  {
+    "season": 2,
+    "tier": 1,
+    "driversChampion": "Hicks_46",
+    "constructorsChampion": "Red Bull",
+    "constructorDrivers": ["Hicks_46", "IRL SCHUMACHER"],
+    "teamLogo": "assets/teams/red-bull.png",
+    "seasonDescription": "A new season, a new tier, and another chapter in the FF1C story."
+  },
+  {
+    "season": 2,
+    "tier": 2,
+    "driversChampion": "JediGamer46",
+    "constructorsChampion": "Red Bull",
+    "constructorDrivers": ["AceTonyTiger", "Starsorphan6"],
+    "teamLogo": "assets/teams/red-bull.png",
+    "seasonDescription": "A standout campaign crowned JediGamer46, while Red Bull took the team title."
+  }
+]

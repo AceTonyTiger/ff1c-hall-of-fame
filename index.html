@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0d">
+  <meta name="description" content="The FF1C Hall of Fame honours the drivers and teams who made Friday F1 Championship history.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FF1C — Hall of Fame">
+  <meta property="og:description" content="Honouring the Champions. Celebrating the Legacy.">
+  <title>FF1C — Hall of Fame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FF1C Hall of Fame home"><img class="brand-logo" src="assets/ff1c-league.png" alt="Friday F1 Championship"/><span class="brand-copy">HALL OF FAME</span></a>
+    <nav aria-label="Main navigation"><a href="#champions">Champions</a><a href="#archive">Archive</a><a href="#legends">Legends</a></nav>
+    <a class="header-tag" href="#archive">EST. FRIDAY RACING <b>↗</b></a>
+  </header>
+  <aside class="season-records-banner" aria-label="More FF1C season details"><span>WANT MORE SEASON DETAILS?</span><a href="https://paddockrecords.com/" target="_blank" rel="noopener noreferrer">Explore the full FF1C records at Paddock Records <b aria-hidden="true">↗</b></a></aside>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-grid"></div><div class="hero-glow"></div>
+      <div class="hero-content"><img class="hero-league-logo" src="assets/ff1c-league.png" alt="Friday F1 Championship league logo"><p class="eyebrow"><span></span> THE OFFICIAL CHAMPIONSHIP ARCHIVE</p>
+        <h1 id="hero-title">FF1C<br><em>HALL OF FAME</em></h1>
+        <p class="hero-subtitle">Honouring the Champions. Celebrating the Legacy.</p>
+        <a class="button button-gold" href="#champions">Explore Our Champions <span>↓</span></a>
+        <div class="hero-foot"><span>FRIDAY F1 CHAMPIONSHIP</span><span>THE RECORD. THE LEGACY.</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img class="hero-feature-logo" src="assets/ff1c-league.png" alt=""></div>
+      <div class="hero-index">01 <i>/</i> 03</div>
+    </section>
+    <section class="stats-section" aria-label="Championship statistics"><div class="section-kicker">THE NUMBERS THAT MATTER <span></span></div><div class="stats-grid" id="stats-grid" aria-live="polite"></div></section>
+    <section class="champions-section section-wrap" id="champions">
+      <div class="section-heading"><div><p class="eyebrow">THE HALL OF FAME</p><h2>Championship <em>Winners</em></h2></div><p class="section-intro">The names etched into FF1C history.<br>Every title, earned on track.</p></div>
+      <div class="filters" aria-label="Filter championship winners"><label>SEASON <select id="season-filter" aria-label="Filter by season"><option value="all">All Seasons</option></select></label><label>TIER <select id="tier-filter" aria-label="Filter by tier"><option value="all">All Tiers</option></select></label><span class="result-count" id="result-count"></span></div>
+      <div class="championship-list" id="championship-list" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No championships match those filters.</p>
+    </section>
+    <section class="archive-section" id="archive"><div class="section-wrap">
+      <div class="section-heading"><div><p class="eyebrow">THE RECORD BOOK</p><h2>Champions <em>Archive</em></h2></div><p class="section-intro">Search every recorded title<br>and revisit the details.</p></div>
+      <div class="archive-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="archive-search" type="search" placeholder="Search driver or constructor…" aria-label="Search by driver or constructor name"></label><p id="archive-count" aria-live="polite"></p></div>
+      <div class="archive-list" id="archive-list"></div><p class="empty-state" id="archive-empty" hidden>No matching championship records.</p>
+    </div></section>
+    <section class="legends-section section-wrap" id="legends"><div class="section-heading"><div><p class="eyebrow">THE GREAT ONES</p><h2>Legends <em>of FF1C</em></h2></div><p class="section-intro">A place among the greats is<br>earned one title at a time.</p></div><div class="legends-grid" id="legends-grid"></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><a class="brand" href="#home"><img class="brand-logo" src="assets/ff1c-league.png" alt="Friday F1 Championship"><span class="brand-copy">HALL OF FAME</span></a><p>Every Champion Has a Story.<br><em>Every Title Becomes History.</em></p><div class="footer-links"><a href="#home">Hall of Fame ↑</a><a href="#archive">Champions Archive</a></div></div><div class="image-credits">Trophy photography: <a href="https://commons.wikimedia.org/wiki/File:F1_Drivers%27_World_Championship_trophy_(cropped).jpg" target="_blank" rel="noreferrer">Raimond Spekking</a> (CC BY-SA 4.0) · Constructors’ trophy: <a href="https://commons.wikimedia.org/wiki/File:MotorExpo_2014_MMB_07_Formula_One_Constructors%27_Trophy.jpg" target="_blank" rel="noreferrer">Mattbuck</a> (CC BY-SA 2.0). Resized and cropped for display.</div><div class="footer-bottom"><span>© <span id="copyright-year"></span> FF1C</span><span>Built to celebrate the drivers and teams who made FF1C history.</span><span>RACE. REMEMBER. REPEAT.</span></div></footer>
+  <dialog class="details-dialog" id="details-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close details">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
